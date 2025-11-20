@@ -1,0 +1,129 @@
+<!-- Interfaz estilo Microsoft con modo oscuro -->
+<div class="ms-page">
+
+  <!-- Barra superior -->
+  <header class="ms-header">
+    <div class="ms-logo">GrupGa</div>
+    <nav class="ms-nav">
+      <a href="#hero">Inicio</a>
+      <a href="#services">Servicios</a>
+      <a href="#news">Novedades</a>
+      <a href="#table">Marcas</a>
+    </nav>
+    <!-- Botón toggle modo oscuro -->
+    <button id="darkToggle" class="ms-btn small">🌙</button>
+  </header>
+
+  <!-- Hero principal -->
+  <section class="ms-hero" id="hero">
+    <h1>Bienvenido(as) a GrupGaStudios</h1>
+    <p>Vive tu experiencia con nuestros servicios: Chat, Music, Store, Media Center y más.</p>
+    <button class="ms-btn">Explorar</button>
+  </section>
+
+  <!-- Bloques de servicios -->
+  <section class="ms-services" id="services">
+    <div class="ms-card">GrupGa Chat</div>
+    <div class="ms-card">Cloud Tunes</div>
+    <div class="ms-card">GrupGa Music</div>
+    <div class="ms-card">GrupGaStore</div>
+    <div class="ms-card">GrupGamuim</div>
+  </section>
+
+  <!-- Novedades -->
+  <section class="ms-section" id="news">
+    <h2>Novedades de GrupGaStudios</h2>
+
+    <!-- Novedad de enero 2026 (oculta por JS) -->
+    <div id="newsJan2026">
+      <p><em>Actualización: 14 de enero del 2026</em></p>
+      <p>
+        Se han confirmado nuevas aplicaciones web compatibles con Chrome, Safari, Opera, Firefox,
+        Microsoft Edge y más. También se trabaja en versiones para Windows y Linux con Wine y subsistema Linux.
+      </p>
+    </div>
+
+    <!-- Novedad de octubre 2025 (visible por defecto) -->
+    <div id="newsOct2025">
+      <p><em>Actualización: 14 de octubre del 2025</em></p>
+      <p>
+        GrupGaStudios no es una comunidad de programadores, sino un proyecto personal que busca crecer
+        con apoyo de la comunidad. Se necesitan sugerencias y colaboración para seguir creando y
+        mejorando servicios futuros.
+      </p>
+    </div>
+
+    <!-- Botón para ver novedades anteriores -->
+    <button class="ms-btn secondary" onclick="toggleOldNews()">Ver novedades anteriores</button>
+
+    <!-- Contenedor oculto de novedades anteriores -->
+    <div id="oldNews" class="hidden">
+      <h3>Novedades anteriores</h3>
+      <p><em>Primera novedad: 14 de octubre del 2024</em></p>
+      <p>
+        GrupGaStudios dio la bienvenida con la creación de la página web, donde se subiría contenido
+        en enero del 2026. Se agradeció el apoyo de la comunidad en TikTok, YouTube y WhatsApp.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tabla estilo Microsoft -->
+  <section class="ms-section" id="table">
+    <h2>Servicios y Marcas</h2>
+    <div class="ms-table">
+      <table>
+        <tr>
+          <td>GrupGaStudios</td>
+          <td>Sistemas operativos</td>
+          <td>Compras gratis</td>
+          <td>Marcas GrupGaStudios</td>
+        </tr>
+        <tr>
+          <td>GrupGa Store</td>
+          <td>GrupGa Sierra Roja</td>
+          <td>GrupGaStore Live</td>
+          <td>GrupGaStudios(2916869)</td>
+        </tr>
+        <tr>
+          <td>GrupGa Music</td>
+          <td>GrupGa Sierra Verde</td>
+          <td>GrupGa Music Pro</td>
+          <td>GrupGaPlus(7686192568)</td>
+        </tr>
+        <tr>
+          <td>GrupGa Center</td>
+          <td>GrupGa Sierra Amarilla</td>
+          <td>GrupGa Cloud Tunes</td>
+          <td>GrupStanleyHack(50343)</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="ms-footer">
+    <p>© 2026 GrupGaStudios — Inspirado en el estilo Microsoft</p>
+  </footer>
+</div>
+
+<script>
+  // Toggle modo oscuro
+  const toggle = document.getElementById("darkToggle");
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+
+  // Ocultar novedad de enero 2026 y mostrar la de octubre 2025
+  document.addEventListener("DOMContentLoaded", () => {
+    const jan2026 = document.getElementById("newsJan2026");
+    const oct2025 = document.getElementById("newsOct2025");
+    if (jan2026) jan2026.style.display = "none";
+    if (oct2025) oct2025.style.display = "block";
+  });
+
+  // Toggle para ver novedades anteriores
+  function toggleOldNews() {
+    const oldNews = document.getElementById("oldNews");
+    oldNews.classList.toggle("hidden");
+  }
+</script>
