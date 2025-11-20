@@ -1,0 +1,238 @@
+/* Estilo Microsoft con modo oscuro */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f3f3f3;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Header fijo */
+.ms-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 12px 40px;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.ms-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0078d4;
+}
+
+.ms-nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.ms-nav a:hover {
+  color: #0078d4;
+}
+
+/* Botón */
+.ms-btn {
+  background: #0078d4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.ms-btn:hover {
+  background: #005a9e;
+}
+.ms-btn.small {
+  padding: 6px 12px;
+  font-size: 12px;
+  background: #eee;
+  color: #222;
+}
+.ms-btn.small:hover {
+  background: #ddd;
+}
+
+/* Hero principal */
+.ms-hero {
+  background: linear-gradient(120deg, #0078d4, #00bcf2);
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px 80px;
+  margin-top: 60px;
+  transition: background 0.3s;
+}
+.ms-hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.ms-hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Cards de servicios */
+.ms-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+}
+.ms-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  flex: 1 1 200px;
+  text-align: center;
+  font-weight: 500;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.3s, color 0.3s;
+}
+.ms-card:hover {
+  transform: translateY(-4px);
+  border-color: #0078d4;
+}
+
+/* Secciones */
+.ms-section {
+  background: #fff;
+  margin: 20px auto;
+  padding: 40px;
+  max-width: 900px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background 0.3s, color 0.3s;
+}
+.ms-section h2 {
+  margin-top: 0;
+  color: #0078d4;
+}
+
+/* Tabla */
+.ms-table {
+  overflow-x: auto;
+}
+.ms-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ms-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  transition: background 0.3s, color 0.3s;
+}
+.ms-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Footer */
+.ms-footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Modo oscuro */
+body.dark {
+  background: #1b1b1b;
+  color: #e6e6e6;
+}
+body.dark .ms-header {
+  background: #2a2a2a;
+  border-color: #444;
+}
+body.dark .ms-nav a {
+  color: #e6e6e6;
+}
+body.dark .ms-nav a:hover {
+  color: #55d6be;
+}
+body.dark .ms-btn {
+  background: #55d6be;
+  color: #1b1b1b;
+}
+body.dark .ms-btn:hover {
+  background: #44b5a0;
+}
+body.dark .ms-card {
+  background: #2a2a2a;
+  border-color: #444;
+  color: #e6e6e6;
+}
+body.dark .ms-section {
+  background: #2a2a2a;
+  color: #e6e6e6;
+}
+body.dark .ms-section h2 {
+  color: #55d6be;
+}
+body.dark .ms-table td {
+  border-color: #444;
+}
+body.dark .ms-table tr:nth-child(even) {
+  background: #333;
+}
+body.dark .ms-footer {
+  background: #2a2a2a;
+  border-color: #444
+    2.4
+    
+    /* Botón secundario estilo Microsoft */
+.ms-btn.secondary {
+  background: transparent;
+  color: #0078d4;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+.ms-btn.secondary:hover {
+  color: #005a9e;
+}
+
+/* Contenedor oculto */
+.hidden {
+  display: none;
+}
+
+  /* Botón secundario estilo Microsoft */
+.ms-btn.secondary {
+  background: transparent;
+  color: #0078d4;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+.ms-btn.secondary:hover {
+  color: #005a9e;
+}
+
+/* Contenedor oculto */
+.hidden {
+  display: none;
+}
+
+/* Animación suave al mostrar/ocultar */
+#oldNews {
+  transition: all 0.3s ease;
+    
